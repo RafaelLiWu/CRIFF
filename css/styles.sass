@@ -1,0 +1,290 @@
+@use 'mixins'
+@import 'boostrapmod.css'
+
+.iff
+    color: #59d648
+
+%u-object-fit
+    object-fit: cover
+    object-position: center
+
+%u-img-icon
+    border-radius: 50%
+    width: 80px
+    height: 80px
+    @extend %u-object-fit
+
+%u-display-centered
+    display: flex
+    justify-content: center
+    align-items: center
+
+%u-anti-a
+    text-decoration: none
+    outline: none
+    border: none
+    
+    &:hover
+        text-decoration: none
+        outline: none
+        border: none
+
+    &:focus
+        text-decoration: none
+        outline: none
+        border: none  
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    font-family: "Poppins", Arial, Helvetica, sans-serif
+
+.model
+    display: none
+
+.header
+    position: fixed
+    padding: 5px 15px
+    z-index: 999
+
+.navbar-brand
+    @extend %u-anti-a
+    color: white
+    font-size: 24px !important
+    font-weight: bolder
+
+    &:hover
+        color: white
+
+.nav-link
+    @extend %u-anti-a
+    color: white
+    margin: 0 10px
+    &:hover
+        color: white
+    
+    & i 
+        font-size: 20px
+        
+
+
+
+
+
+.apresentacao
+    @include mixins.d(flex,space-around,center,true)
+    min-height: 95vh
+
+    &-imagem
+        width: 400px
+        overflow: hidden
+
+    &-content
+        width: 550px
+        text-align: center
+
+.sobre_nos
+    min-height: 95vh
+    @include mixins.d(flex,center,center, true)
+
+    &-container
+        padding: 10px
+        @include mixins.d(flex,space-around,center,true)
+
+    &-texto
+        width: 550px
+
+    //CAROUSEL!!!
+
+.container-carousel
+    max-width: 500px
+    margin: 0 15px
+
+.carousel-item
+    max-width: 500px
+    display: flex
+    flex-direction: row
+
+.content
+    padding: 30px 45px
+    width: 100%
+    min-height: 332px
+    background-color: black
+
+.foto
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    justify-content: space-between
+
+.guy
+    &-name
+        margin-left: 10px
+        text-align: center
+
+    &-social
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        padding: 0 20px
+
+        & i
+            font-size: 30px
+            margin: 0 14px
+            color: rgba(255,255,255,65)
+            transition: 1s
+
+            &:hover
+                font-size: 30px
+                margin: 0 14px
+                color: white
+
+.foto-img
+    height: 105px
+    width: 115px
+    background-color: white
+    display: flex
+    border-radius: 30px
+    border-bottom-right-radius: 100%
+    border-top-left-radius: 0px
+    padding: 10px
+
+    & img
+        @extend %u-img-icon
+
+.projetos
+    @include mixins.d(flex,center,center,true)
+    padding: 30px 15px
+
+    &--buttons
+        width: 305px
+        padding: 15px
+        border-radius: 10px
+
+        &--item
+            display: flex
+            cursor: pointer
+            transition: .4s
+
+            &--img
+                width: 150px
+                padding: 15px
+                min-height: 100px
+                @extend %u-display-centered
+
+                & img
+                    border-radius: 10px
+
+            &--content
+                flex: 1
+                @extend %u-display-centered
+                text-align: center
+
+                & span
+                    color: white
+
+            &.active
+                background-color: #dc3545
+
+    &--computer
+        padding: 45px 25px
+        flex: 1
+
+        &--content
+            background-color: #4c4d4e
+            min-height: 400px
+            display: flex
+            flex-direction: column
+            position: relative
+            color: white
+
+            &--title
+                @extend %u-display-centered
+                color: white
+                padding: 3px
+
+                &--watch
+                    position: absolute
+                    right: 0
+                    padding-right: 5px
+                    color: #e7e5e5
+
+                &--menu
+                    display: flex
+                    position: absolute
+                    left: 0
+                    margin: 4px
+
+                    &--menu
+                        width: 22px
+                        height: 22px
+                        border-radius: 50%
+
+                        &--toggle
+                            width: 100%
+                            height: 100%
+                            border: 1px solid #e7e5e5
+                            transition: .5s
+                            cursor: pointer
+                            border-radius: 50%
+
+                            &:hover
+                                background-color: #e7e5e5
+
+                    &--area
+                        display: flex
+                        &--img
+                            width: 22px
+                            height: 22px
+                            margin: 0 3px
+                            border: 1px solid #201414
+                            border-radius: 50%
+                            overflow: hidden
+                            position: absolute
+
+                            &:first-child
+                                margin: 0 3px !important
+
+                            & img
+                                width: 22px
+                                height: 22px
+                                @extend %u-object-fit
+
+            &--body
+                padding: 12px
+                @extend %u-display-centered
+                flex-direction: column
+                flex: 1
+
+                &--social
+                    font-size: 30px
+
+                    & i
+                        margin: 0 4px
+                        @extend %u-anti-a
+                        color: #181414
+
+        &--sociais
+            margin-top: 15px
+            background-color: #1b1818
+            min-height: 40px
+            @extend %u-display-centered
+
+            & i
+                font-size: 25px
+                margin: 4px 10px
+                @extend %u-anti-a
+                color: white
+                display: inline-block
+                padding: 4px 7px
+                transition: 1s
+                border-radius: 10px
+
+                &:hover
+                    background-color: #272626
+                    color: white
+
+@media ( max-width: 800px )
+    .projetos
+        flex-direction: column-reverse

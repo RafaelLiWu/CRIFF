@@ -1,0 +1,10 @@
+@mixin d($display,$justify,$align, $flex-wrap)
+    display: #{$display}
+    justify-content: #{$justify}
+    align-items: #{$align}
+    @if($flex-wrap)
+        flex-wrap: wrap
+    @else
+        flex-wrap: nowrap   
+
+    

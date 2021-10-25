@@ -1,0 +1,355 @@
+@import 'boostrapmod.css';
+.iff {
+    color: #59d648;
+}
+
+.projetos--computer--content--title--menu--area--img img,
+.foto-img img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.foto-img img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.projetos--computer--sociais,
+.projetos--computer--content--body,
+.projetos--computer--content--title,
+.projetos--buttons--item--content,
+.projetos--buttons--item--img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projetos--computer--sociais i,
+.projetos--computer--content--body--social i,
+.nav-link,
+.navbar-brand {
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+.projetos--computer--sociais i:hover,
+.projetos--computer--content--body--social i:hover,
+.nav-link:hover,
+.navbar-brand:hover {
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+.projetos--computer--sociais i:focus,
+.projetos--computer--content--body--social i:focus,
+.nav-link:focus,
+.navbar-brand:focus {
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.model {
+    display: none;
+}
+
+.header {
+    position: fixed;
+    padding: 5px 15px;
+    z-index: 999;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 24px !important;
+    font-weight: bolder;
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.nav-link {
+    color: white;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-link i {
+    font-size: 20px;
+}
+
+.apresentacao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 95vh;
+}
+
+.apresentacao-imagem {
+    width: 400px;
+    overflow: hidden;
+}
+
+.apresentacao-content {
+    width: 550px;
+    text-align: center;
+}
+
+.sobre_nos {
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sobre_nos-container {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sobre_nos-texto {
+    width: 550px;
+}
+
+.container-carousel {
+    max-width: 500px;
+    margin: 0 15px;
+}
+
+.carousel-item {
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    padding: 30px 45px;
+    width: 100%;
+    min-height: 332px;
+    background-color: black;
+}
+
+.foto {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.guy-name {
+    margin-left: 10px;
+    text-align: center;
+}
+
+.guy-social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.guy-social i {
+    font-size: 30px;
+    margin: 0 14px;
+    color: white;
+    transition: 1s;
+}
+
+.guy-social i:hover {
+    font-size: 30px;
+    margin: 0 14px;
+    color: white;
+}
+
+.foto-img {
+    height: 105px;
+    width: 115px;
+    background-color: white;
+    display: flex;
+    border-radius: 30px;
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 0px;
+    padding: 10px;
+}
+
+.projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 15px;
+}
+
+.projetos--buttons {
+    width: 305px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.projetos--buttons--item {
+    display: flex;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.projetos--buttons--item--img {
+    width: 150px;
+    padding: 15px;
+    min-height: 100px;
+}
+
+.projetos--buttons--item--img img {
+    border-radius: 10px;
+}
+
+.projetos--buttons--item--content {
+    flex: 1;
+    text-align: center;
+}
+
+.projetos--buttons--item--content span {
+    color: white;
+}
+
+.projetos--buttons--item.active {
+    background-color: #dc3545;
+}
+
+.projetos--computer {
+    padding: 45px 25px;
+    flex: 1;
+}
+
+.projetos--computer--content {
+    background-color: #4c4d4e;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: white;
+}
+
+.projetos--computer--content--title {
+    color: white;
+    padding: 3px;
+}
+
+.projetos--computer--content--title--watch {
+    position: absolute;
+    right: 0;
+    padding-right: 5px;
+    color: #e7e5e5;
+}
+
+.projetos--computer--content--title--menu {
+    display: flex;
+    position: absolute;
+    left: 0;
+    margin: 4px;
+}
+
+.projetos--computer--content--title--menu--menu {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+
+.projetos--computer--content--title--menu--menu--toggle {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #e7e5e5;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.projetos--computer--content--title--menu--menu--toggle:hover {
+    background-color: #e7e5e5;
+}
+
+.projetos--computer--content--title--menu--area {
+    display: flex;
+}
+
+.projetos--computer--content--title--menu--area--img {
+    width: 22px;
+    height: 22px;
+    margin: 0 3px;
+    border: 1px solid #201414;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.projetos--computer--content--title--menu--area--img:first-child {
+    margin: 0 3px !important;
+}
+
+.projetos--computer--content--title--menu--area--img img {
+    width: 22px;
+    height: 22px;
+}
+
+.projetos--computer--content--body {
+    padding: 12px;
+    flex-direction: column;
+    flex: 1;
+}
+
+.projetos--computer--content--body--social {
+    font-size: 30px;
+}
+
+.projetos--computer--content--body--social i {
+    margin: 0 4px;
+    color: #181414;
+}
+
+.projetos--computer--sociais {
+    margin-top: 15px;
+    background-color: #1b1818;
+    min-height: 40px;
+}
+
+.projetos--computer--sociais i {
+    font-size: 25px;
+    margin: 4px 10px;
+    color: white;
+    display: inline-block;
+    padding: 4px 7px;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.projetos--computer--sociais i:hover {
+    background-color: #272626;
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .projetos {
+        flex-direction: column-reverse;
+    }
+}
+
+
+/*# sourceMappingURL=styles.css.map */

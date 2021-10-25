@@ -1,0 +1,192 @@
+.carousel-control-next,
+.carousel-control-prev {
+    bottom: 100% !important;
+    top: calc(0px + 50%) !important;
+    width: auto !important;
+    margin: 0 6px;
+}
+
+.carousel-control-prev-button {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+}
+
+.carousel-control-prev-button::before {
+    content: '';
+    width: 40%;
+    height: 1.5px;
+    background-color: black;
+    position: absolute;
+    left: -5px;
+    top: calc(50% - .75px);
+    transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225);
+}
+
+.carousel-control-prev-button:hover::before {
+    width: 95%;
+    ;
+}
+
+.carousel-control-prev-button::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-left: 3.5px solid white;
+    border-top: 3.5px solid white;
+    opacity: 0;
+    transition: all 1500ms cubic-bezier(0.890, -0.170, 0.140, 1.225);
+}
+
+.carousel-control-prev-button:hover::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    opacity: 1;
+    border-left: 3.5px solid black;
+    border-top: 3.5px solid black;
+    transform: rotate(-45deg);
+}
+
+.carousel-control-next-button {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+}
+
+.carousel-control-next-button::before {
+    content: '';
+    width: 40%;
+    height: 1.5px;
+    background-color: black;
+    position: absolute;
+    right: -5px;
+    top: calc(50% - .75px);
+    transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225);
+}
+
+.carousel-control-next-button:hover::before {
+    width: 95%;
+    ;
+}
+
+.carousel-control-next-button::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-right: 3.5px solid white;
+    border-top: 3.5px solid white;
+    opacity: 0;
+    transition: all 1500ms cubic-bezier(0.890, -0.170, 0.140, 1.225);
+}
+
+.carousel-control-next-button:hover::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    opacity: 1;
+    border-right: 3.5px solid black;
+    border-top: 3.5px solid black;
+    transform: rotate(45deg);
+}
+
+.carousel-indicators .active {
+    background-color: black !important;
+}
+
+.carousel-indicators li {
+    background-color: rgba(0, 0, 0, .5) !important;
+}
+
+
+/*????????????????????????????????????????????????????
+
+    DROPDOWN PARA Á AREA DE PROJETOS
+
+????????????????????????????????????????????????????*/
+
+.dropdown-toggle::after {
+    display: none !important
+}
+
+.dropdown-item {
+    display: inline-flex !important;
+    align-items: center;
+}
+
+.dropdown-item:hover {
+    background-color: #3c444d !important;
+}
+
+.dropdown-item img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 5px;
+}
+
+.dropdown-item span {
+    margin-left: 5px;
+    color: white;
+    cursor: default;
+}
+
+footer {
+    width: 100%;
+    color: white;
+    background-color: #222;
+    position: relative;
+}
+
+.footer-title {
+    padding: 15px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.footer-title small {
+    font-size: 15px;
+}
+
+.footer-title :is(.cr) {
+    color: white;
+}
+
+footer form {
+    padding: 40px;
+}
+
+footer div.footer-titulo {
+    padding: 30px 0;
+    font-size: 42px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    color: #3CA2E6;
+}
+
+footer .contato {
+    max-width: 1140px;
+    margin: auto;
+}
+
+input.form-control,
+select option,
+select#estado.form-control {
+    background-color: #333;
+    color: white;
+}
